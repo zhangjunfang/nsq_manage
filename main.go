@@ -11,8 +11,8 @@ func main() {
 	T()
 }
 func T() {
-	//go nsq_sync_config.Consumer()
-	nsq_sync_config.Consumer()
+	go nsq_sync_config.Consumer()
+	//nsq_sync_config.Consumer()
 	fmt.Println("-----------------------------")
 	nsq_sync_config.Producer()
 }
